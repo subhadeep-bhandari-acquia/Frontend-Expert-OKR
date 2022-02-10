@@ -62,12 +62,12 @@ form {
   }
 }
 
-.solid-btn {
-  @include button($white, $site-green);
+.primary-btn {
+  @include button($white, $primary-green);
 }
 
-.light-btn {
-  @include button($site-green, $white);
+.secondary-btn {
+  @include button($primary-green, $white);
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -82,11 +82,11 @@ form {
     font-size: 16px;
     line-height: 18px;
   }
-  .solid-btn {
-    @include button($white, $site-green, 8px, 15px);
+  .primary-btn {
+    @include button($white, $primary-green, 8px, 15px);
   }
-  .light-btn {
-    @include button($site-green, $white, 8px, 15px);
+  .secondary-btn {
+    @include button($primary-green, $white, 8px, 15px);
   }
 }
 
@@ -112,11 +112,11 @@ form {
     line-height: 15px;
     letter-spacing: 0.65px;
   }
-  .solid-btn {
-    @include button($white, $site-green, 5px, 10px);
+  .primary-btn {
+    @include button($white, $primary-green, 5px, 10px);
   }
-  .light-btn {
-    @include button($site-green, $white, 5px, 10px);
+  .secondary-btn {
+    @include button($primary-green, $white, 5px, 10px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -142,10 +142,10 @@ form {
       width: 400px;
     }
   }
-  .solid-btn {
-    @include button($white, $site-green, 10px, 15px);
+  .primary-btn {
+    @include button($white, $primary-green, 10px, 15px);
   }
-  .light-btn {
-    @include button($site-green, $white, 10px, 15px);
+  .secondary-btn {
+    @include button($primary-green, $white, 10px, 15px);
   }
 }

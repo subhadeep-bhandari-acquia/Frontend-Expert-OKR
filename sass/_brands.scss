@@ -1,7 +1,10 @@
-.brand-section {
+.best-brands {
   padding: 50px 15% 100px;
   text-align: center;
-  .brand-item {
+  img {
+    width: 100px;
+  }
+  .brand-details {
     padding: 10px 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -9,10 +12,6 @@
       padding: 0;
       grid-template-columns: repeat(2, 1fr);
       gap: 35%;
-    }
-
-    img {
-      width: 100px;
     }
   }
 }

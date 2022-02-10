@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var livereload = require('gulp-livereload')
-//var uglify = require('gulp-uglifyjs');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
@@ -22,11 +21,6 @@ gulp.task('sass', function () {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
-// gulp.task('uglify', function() {
-//   gulp.src('./themes/custom/fetheme/lib/*.js')
-//     .pipe(uglify('main.js'))
-//     .pipe(gulp.dest('./themes/custom/fetheme/js'))
-// });
 gulp.task('watch', function(){
     livereload.listen();
     gulp.watch('./sass/**/*.scss', gulp.series('sass'));

@@ -1,38 +1,38 @@
 @import "config";
 
 .header {
-  .inline-element {
+  .header-links {
     display: flex;
-    list-style-type: none;
-    align-items: center;
     justify-content: space-between;
-    img {
-      width: 250px;
-    }
-    .nav li, .solid-btn {
+    align-items: center;
+    list-style-type: none;
+    .nav li, .primary-btn {
       font-weight: 800;
       font-size: 17px;
       line-height: 20px;
       margin-right: 50px;
       letter-spacing: 1.275px;
     }
+    img {
+      width: 250px;
+    }
+  }
+  .nav li {
+    border-bottom: 5px solid $primary-green;
+    padding: 5px 10px;
   }
   ul {
     list-style: none;
-  }
-  .nav li {
-    border-bottom: 5px solid $site-green;
-    padding: 5px 10px;
   }
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1439px) {
   .header {
-    .inline-element {
+    .header-links {
       img {
         width: 225px;
       }
-      .nav li, .solid-btn {
+      .nav li, .primary-btn {
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 1px;
@@ -44,11 +44,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
-    .inline-element {
+    .header-links {
       img {
         width: 200px;
       }
-      .nav li, .solid-btn {
+      .nav li, .primary-btn {
         font-size: 11px;
         line-height: 13px;
         letter-spacing: 0.825px;
@@ -60,12 +60,12 @@
 
 @media screen and (max-width: 767px) {
   .header {
-    .inline-element {
+    .header-links {
       align-items: flex-start;
       .nav li {
         display: none;
       }
-      .solid-btn {
+      .primary-btn {
         padding: 5px 8px;
         letter-spacing: 0.25px;
       }

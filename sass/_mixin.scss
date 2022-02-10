@@ -3,7 +3,7 @@
 @mixin button($color: $black, $background-color: $white, $padding-horizontal: 10px, $padding-vertical: 20px) {
   background-color: $background-color;
   padding: $padding-horizontal $padding-vertical;
-  border: 2px solid $site-green;
+  border: 2px solid $primary-green;
   a {
     color: $color;
   }

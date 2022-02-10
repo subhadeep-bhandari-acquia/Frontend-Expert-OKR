@@ -5,6 +5,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3%;
+    .first-client {
+      background-image: url('../img/first_case_study.png');
+    }
+    .second-client {
+      background-image: url('../img/second_case_study.png');
+    }
+    .third-client {
+      background-image: url('../img/third_case_study.png');
+    }
     .client {
       display: flex;
       align-items: flex-end;
@@ -25,16 +34,6 @@
         line-height: 22px;
         margin: 5px 0;
       }
-    }
-
-    .client-1 {
-      background-image: url('../img/case_study1.png');
-    }
-    .client-2 {
-      background-image: url('../img/case_study2.png');
-    }
-    .client-3 {
-      background-image: url('../img/case_study3.png');
     }
   }
 }
