@@ -1,0 +1,39 @@
+@import "config";
+
+footer {
+  padding: 50px 15% 0;
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr repeat(4,1fr);
+    padding-bottom: 30px;
+    border-bottom: 2px solid $light-grey;
+
+    .footer-menu {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        padding: 4% 0;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 50px 0 0;
+
+    .footer-bottom {
+      flex-direction: column;
+    }
+  }
+}
